@@ -4,7 +4,9 @@ on:
   push:
   schedule:
    # 定时任务，北京时间1点执行任务 1:00（北京时间）-8:00 = -17:00(24进制)
-    - cron: '00 17 * * *'
+    - cron: '30 16 * * *'
+    - cron: '00 10 * * *'
+    - cron: '30 5 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
